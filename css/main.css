@@ -24,13 +24,13 @@ header nav {
   height: 80px;
   width: 100vw;
 }
-header li {
+header nav li {
   list-style: none;
   text-decoration: none;
   color: black;
   padding: 0 30px;
 }
-header li a {
+header nav li a {
   list-style: none;
   text-decoration: none;
   color: black;
