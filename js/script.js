@@ -529,7 +529,6 @@ window.location.hash = hash;
 
 $(window).on("scroll", function () {
     if ($(this).scrollTop() > 0) {
-        $(".designbrief").css("background", "30px");
     }
     else {
     }

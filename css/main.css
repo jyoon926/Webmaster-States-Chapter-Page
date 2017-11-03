@@ -21,11 +21,11 @@ header ul {
     width: 100vw;
     justify-content: left;
     align-items: center;
-    background-color: rgba(250,250,250,1);
+    background-color: rgba(255,255,255,1);
     transition-duration: 200ms;
 }
 header ul a {
-    height: 72px;
+    height: 80px;
     width: 200px;
     display: flex;
     justify-content: center;
@@ -33,15 +33,13 @@ header ul a {
     list-style: none;
     text-decoration: none;
     font-size: 16px;
-    border-bottom: white solid 6px;
     transition-duration: 200ms;
-    padding-top: 6px;
     color: #442256;
     font-family: 'hindsemibold';
     letter-spacing: 1px;
+    background: white;
 }
 header ul a:hover {
-    border-bottom: #442256 solid 6px;
 }
 .designbrief {
     position: fixed;
@@ -71,7 +69,6 @@ header ul a:hover {
     border: 5px solid #442256;
 }
 .one {
-    border-bottom: #442256 solid 6px;
 }
 .lander{
     margin: 0;
@@ -114,7 +111,7 @@ header ul a:hover {
 .ihs {
     color: white;
     font-family: 'hindmedium';
-    font-size: 24px;
+    font-size: 32px;
     margin: 80px 0 50px 0;
     text-align: center;
     animation-duration: 700ms;
@@ -123,18 +120,19 @@ header ul a:hover {
 .tsa {
     color: white;
     font-family: 'hindbold';
-    font-size: 80px;
+    font-size: 72px;
     margin: 0 0 0 0;
     text-align: center;
     animation-duration: 700ms;
     animation-delay: 400ms;
 }
 .more {
-    color: #ffffff;
-    background-color: #5f2c82;
+    color: #442256;
+    background-color: #ffffff;
     font-family: 'hindmedium';
     font-size: 20px;
-    padding: 20px 35px;
+    padding: 20px 30px;
+    border: 4px solid white;
     border-radius: 60px;
     text-decoration: none;
     margin: 50px 0 0 0;
@@ -144,7 +142,8 @@ header ul a:hover {
     animation-delay: 500ms;
 }
 .more:hover {
-    margin: 40px 0 10px 0;
+    background: #442256;
+    color: white;
 }
 .button {
     font-size: 20px;
