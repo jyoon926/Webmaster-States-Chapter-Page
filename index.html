@@ -1,10 +1,6 @@
 <html>
 <head>
-<<<<<<< HEAD
     <title>Ithaca High School TSA</title>
-=======
-    <title>IHSTSA</title>
->>>>>>> 2ea5db976e4e5dfd674e581d8b0034189fc3cd9f
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/hover.css">
@@ -12,107 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
-<<<<<<< HEAD
     <script src="js/wow.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script>
-         $(document).ready(function(){
-         $("a").on('click', function(event) {
-         if (this.hash !== "") {
-         event.preventDefault();
-         var hash = this.hash;
-         $('html, body').animate({
-         scrollTop: $(hash).offset().top
-         }, 800, function(){
-         window.location.hash = hash;
-         });
-         } // End if
-         });
-         });
-    </script>
-    <script>
-         $(window).on("scroll", function () {
-             if ($(this).scrollTop() > 0) {
-                 $(".designbrief").css("background", "30px");
-             }
-             else {
-             }
-         });
-         //Parallax
-        function simpleParallax() {
-            //This variable is storing the distance scrolled
-            var scrolled = $(window).scrollTop() + 2;
-            var winW = window.innerWidth;
-
-            if( winW >= 1000) {
-                $('.lander').css('background-position', '0' + -(scrolled * 0.7) + 'px');
-                $('.cover').css('background-position', '0' + -(scrolled * 0.4) + 'px');
-                $('.cover2').css('background-position', '0' + -(scrolled * 0.2) + 'px');
-            } else {
-                $('.lander').css('background-position', '0' + -(scrolled * 0) + 'px');
-                $('.cover').css('background-position', '0' + -(scrolled * 0) + 'px');
-                $('.cover2').css('background-position', '0' + -(scrolled * 0) + 'px');
-            }
-        }
-        //Everytime we scroll, it will fire the function
-        $(window).scroll(function (e) {
-            simpleParallax();
-        });
-        var scwease = require('scroll-with-ease');
-        scwease(element, 1500, [0.42, 0.0, 0.58, 1.0]);
-    </script>
     <script src="js/wow.min.js"></script>
-=======
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script>
-         $(document).ready(function(){
-         $("a").on('click', function(event) {
-         if (this.hash !== "") {
-         event.preventDefault();
-         var hash = this.hash;
-         $('html, body').animate({
-         scrollTop: $(hash).offset().top
-         }, 800, function(){
-         window.location.hash = hash;
-         });
-         } // End if
-         });
-         });
-    </script>
-    <script>
-         $(window).on("scroll", function () {
-             if ($(this).scrollTop() > 0) {
-                 $(".designbrief").css("background", "30px");
-             }
-             else {
-             }
-         });
-         //Parallax
-        function simpleParallax() {
-            //This variable is storing the distance scrolled
-            var scrolled = $(window).scrollTop() + 2;
-            var winW = window.innerWidth;
-
-            if( winW >= 1000) {
-                $('.lander').css('background-position', '0' + -(scrolled * 0.7) + 'px');
-                $('.cover').css('background-position', '0' + -(scrolled * 0.4) + 'px');
-                $('.cover2').css('background-position', '0' + -(scrolled * 0.2) + 'px');
-            } else {
-                $('.lander').css('background-position', '0' + -(scrolled * 0) + 'px');
-                $('.cover').css('background-position', '0' + -(scrolled * 0) + 'px');
-                $('.cover2').css('background-position', '0' + -(scrolled * 0) + 'px');
-            }
-        }
-        //Everytime we scroll, it will fire the function
-        $(window).scroll(function (e) {
-            simpleParallax();
-        });
-        var scwease = require('scroll-with-ease');
-        scwease(element, 1500, [0.42, 0.0, 0.58, 1.0]);
-    </script>
-    <script src="js/wow.min.js"></script>
->>>>>>> 2ea5db976e4e5dfd674e581d8b0034189fc3cd9f
     <script>new WOW().init();</script>
 </head>
 <body>

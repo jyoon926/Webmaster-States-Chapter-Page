@@ -511,3 +511,48 @@
   })();
 
 }).call(this);
+
+
+$(document).ready(function(){
+$("a").on('click', function(event) {
+if (this.hash !== "") {
+event.preventDefault();
+var hash = this.hash;
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 800, function(){
+window.location.hash = hash;
+});
+} // End if
+});
+});
+
+$(window).on("scroll", function () {
+    if ($(this).scrollTop() > 0) {
+        $(".designbrief").css("background", "30px");
+    }
+    else {
+    }
+});
+//Parallax
+function simpleParallax() {
+   //This variable is storing the distance scrolled
+   var scrolled = $(window).scrollTop() + 2;
+   var winW = window.innerWidth;
+
+   if( winW >= 1000) {
+       $('.lander').css('background-position', '0' + -(scrolled * 0.7) + 'px');
+       $('.cover').css('background-position', '0' + -(scrolled * 0.4) + 'px');
+       $('.cover2').css('background-position', '0' + -(scrolled * 0.2) + 'px');
+   } else {
+       $('.lander').css('background-position', '0' + -(scrolled * 0) + 'px');
+       $('.cover').css('background-position', '0' + -(scrolled * 0) + 'px');
+       $('.cover2').css('background-position', '0' + -(scrolled * 0) + 'px');
+   }
+}
+//Everytime we scroll, it will fire the function
+$(window).scroll(function (e) {
+   simpleParallax();
+});
+var scwease = require('scroll-with-ease');
+scwease(element, 1500, [0.42, 0.0, 0.58, 1.0]);
