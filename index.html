@@ -1,34 +1,85 @@
 <html>
-
-  <head>
-    <title>IHSTSA</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/hover.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <script src="js/script.js"></script>
+<head>
+    <title>Ithaca High School TSA</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
     <script src="js/wow.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+         $(document).ready(function(){
+         $("a").on('click', function(event) {
+         if (this.hash !== "") {
+         event.preventDefault();
+         var hash = this.hash;
+         $('html, body').animate({
+         scrollTop: $(hash).offset().top
+         }, 800, function(){
+         window.location.hash = hash;
+         });
+         } // End if
+         });
+         });
+    </script>
+    <script>
+         $(window).on("scroll", function () {
+             if ($(this).scrollTop() > 0) {
+                 $(".designbrief").css("background", "30px");
+             }
+             else {
+             }
+         });
+         //Parallax
+        function simpleParallax() {
+            //This variable is storing the distance scrolled
+            var scrolled = $(window).scrollTop() + 2;
+            var winW = window.innerWidth;
+
+            if( winW >= 1000) {
+                $('.lander').css('background-position', '0' + -(scrolled * 0.7) + 'px');
+                $('.cover').css('background-position', '0' + -(scrolled * 0.4) + 'px');
+                $('.cover2').css('background-position', '0' + -(scrolled * 0.2) + 'px');
+            } else {
+                $('.lander').css('background-position', '0' + -(scrolled * 0) + 'px');
+                $('.cover').css('background-position', '0' + -(scrolled * 0) + 'px');
+                $('.cover2').css('background-position', '0' + -(scrolled * 0) + 'px');
+            }
+        }
+        //Everytime we scroll, it will fire the function
+        $(window).scroll(function (e) {
+            simpleParallax();
+        });
+        var scwease = require('scroll-with-ease');
+        scwease(element, 1500, [0.42, 0.0, 0.58, 1.0]);
+    </script>
+    <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
-  </head>
-
-  <body>
-    <header>
-      <nav>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Design Brief</a></li>
-      </nav>
-    </header>
-
-    <div class="page_content">
-      <div class="lander">
-        <h1>Ithaca High School</h1>
-        <h2>Technology Student Association</h2>
-      </div>
+</head>
+<body>
+    <input type="checkbox" id="sidebartoggler" name="" value="" />
+    <div class="page-wrap">
+        <label for="sidebartoggler" class="fadeIn toggle"><img src="img/icon.svg" alt="" height="80" width="80"></img></label>
+        <div class="page-content">
+            <div class="wow fadeIn lander" id="top">
+                <p class="wow ihs fadeInUp">Ithaca High School</p>
+                <p class="wow tsa fadeInUp">TECHNOLOGY STUDENT ASSOCIATION</p>
+                <a href="#more" class="wow more fadeInUp button">READ MORE</a>
+            </div>
+            <div class="wow fadeIn cover"></div>
+            <div class="wow fadeIn cover2"></div>
+        <header>
+            <ul class="header">
+                <a href="#home" class="one"><li class="okay">HOME</li></a><a href="about.html" class="a">
+                <li>ABOUT</li></a><a href="courses.html" class="b">
+                <li>COURSES</li></a>
+            </ul>
+        </header>
+        <a href="#" class="designbrief"><li>Design Brief</li></a>
+        <div class="space"></div>
     </div>
-
-  </body>
-
+</body>
 </html>
