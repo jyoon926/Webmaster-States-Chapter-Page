@@ -7,3 +7,31 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+header {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 100vw;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  height: 80px;
+  width: 100vw;
+}
+header li {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  padding: 0 30px;
+}
+header li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
