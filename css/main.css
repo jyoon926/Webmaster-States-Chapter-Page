@@ -193,7 +193,7 @@ header {
 }
 .section1title {
     font-family: 'hindbold';
-    font-size: 46px;
+    font-size: 60px;
     letter-spacing: 0.5px;
     padding: 20px 0 0 0;
     background: white;
@@ -201,7 +201,7 @@ header {
     margin: 0;
     padding: 50px 0 0 0;
     text-align: center;
-    color: #442256;
+    color: #1e0f33;
 }
 .section1 div {
     margin: 0;
@@ -226,7 +226,7 @@ header {
 .section1 div h2 {
     font-family: 'hindlight';
     font-size: 16px;
-    color: #1e0f33;
+    color: rgba(30, 15, 51, 0.7);
     letter-spacing: 0.5px;
     text-align: center;
     line-height: 24px;
