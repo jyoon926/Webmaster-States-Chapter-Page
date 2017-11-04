@@ -1,7 +1,7 @@
 html {
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: #442256;
     overflow-x: hidden;
 }
 body {
@@ -89,12 +89,6 @@ header ul a:hover {
 }
 .one img {
     width: 100px;
-}
-section {
-    background: #442256;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1000;
 }
 .lander{
     margin: 0;
@@ -194,6 +188,10 @@ section {
 .button {
     font-size: 20px;
 }
+.section-1 {
+    background: white;
+    width: 100vw;
+}
 header {
     top: 0;
     position: fixed;
@@ -219,6 +217,7 @@ header {
     padding: 50px 0 0 0;
     text-align: center;
     color: #442256;
+    animation-duration: 500ms;
 }
 .section1 div {
     margin: 0;
