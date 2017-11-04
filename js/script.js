@@ -512,6 +512,27 @@
 
 }).call(this);
 
+
+$(document).ready(function(){
+$("a").on('click', function(event) {
+if (this.hash !== "") {
+event.preventDefault();
+var hash = this.hash;
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 800, function(){
+window.location.hash = hash;
+});
+} // End if
+});
+});
+
+$(window).on("scroll", function () {
+    if ($(this).scrollTop() > 0) {
+    }
+    else {
+    }
+});
 //Parallax
 function simpleParallax() {
    //This variable is storing the distance scrolled
@@ -534,14 +555,3 @@ $(window).scroll(function (e) {
 });
 var scwease = require('scroll-with-ease');
 scwease(element, 1500, [0.42, 0.0, 0.58, 1.0]);
-
-$(document).ready(function() {
-    var scrollLink = $('.more');
-    // Smooth Scrolling
-    scrollLink.click(function(e){
-        e.preventDefault();
-        $('body,html').animate({
-            scrollTop: $(this.hash)offset().top
-        }, 1000 )
-    })
-})
