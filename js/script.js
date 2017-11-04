@@ -540,11 +540,11 @@ function simpleParallax() {
    var winW = window.innerWidth;
 
    if( winW >= 1000) {
-       $('.lander').css('background-position', '0' + -(scrolled * 0.7) + 'px');
+       $('.cover3').css('background-position', '0' + -(scrolled * 0.7) + 'px');
        $('.cover').css('background-position', '0' + -(scrolled * 0.4) + 'px');
        $('.cover2').css('background-position', '0' + -(scrolled * 0.2) + 'px');
    } else {
-       $('.lander').css('background-position', '0' + -(scrolled * 0) + 'px');
+       $('.cover3').css('background-position', '0' + -(scrolled * 0) + 'px');
        $('.cover').css('background-position', '0' + -(scrolled * 0) + 'px');
        $('.cover2').css('background-position', '0' + -(scrolled * 0) + 'px');
    }
