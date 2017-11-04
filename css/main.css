@@ -8,6 +8,12 @@ body {
     margin: 0;
     padding: 0;
 }
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 header {
     margin: 0;
     padding: 0;
@@ -74,9 +80,16 @@ header ul a:hover {
 }
 .one {
 }
+.one:hover {
+    background: #fff;
+    color: #442256;
+}
+.one img {
+    width: 100px;
+}
 .lander{
     margin: 0;
-    padding: 0 10%;
+    padding: 0;
     height: 100vh;
     background-image: url('../img/landerbgtop.svg');
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -87,7 +100,7 @@ header ul a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 }
 .cover {
     height: 100vh;
@@ -132,6 +145,7 @@ header ul a:hover {
     animation-duration: 700ms;
     animation-delay: 400ms;
     padding: 0;
+    width: 1050px;
 }
 .hr {
     border: 2px solid #9b1e5a;
@@ -163,18 +177,48 @@ header ul a:hover {
 .button {
     font-size: 20px;
 }
-.toggle {
-    display: none;
-}
-#sidebartoggler {
-    display: none;
-}
 header {
     top: 0;
     position: fixed;
 }
-.space {
-    height: 100vh;
+.section1 {
+    width: 100%;
+    padding: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.section1 div {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section1 div img {
+    width: 150px;
+    padding-top: 50px;
+}
+.section1 div h1 {
+    font-family: 'hindmedium';
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding: 20px 0 0 0;
+}
+.section1 div h2 {
+    font-family: 'hindlight';
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 24px;
+    width: 300px;
+    padding-bottom: 50px;
 }
 @media screen and (max-width: 1000px){
 
