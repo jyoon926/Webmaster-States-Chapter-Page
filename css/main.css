@@ -1,7 +1,7 @@
 html {
     margin: 0;
     padding: 0;
-    background: #442256;
+    background: #0d2436;
     overflow-x: hidden;
 }
 body {
@@ -22,6 +22,8 @@ header {
     position: absolute;
     z-index: 50;
     overflow-x: hidden;
+	background: white;
+    width: 100vw;
 }
 header ul {
     margin: 0;
@@ -45,14 +47,14 @@ header ul a {
     text-decoration: none;
     font-size: 16px;
     transition-duration: 400ms;
-    color: #442256;
+    color: #143441;
     font-family: 'hindsemibold';
     letter-spacing: 1px;
     background: white;
     z-index: 50;
 }
 header ul a:hover {
-    background: #442256;
+    background: #143441;
     color: white;
 }
 .designbrief {
@@ -68,24 +70,24 @@ header ul a:hover {
     text-decoration: none;
     font-size: 16px;
     background-color: #fff;
-    color: #442256;
+    color: #143441;
     font-family: 'hindsemibold';
-    border: 2px solid #442256;
+    border: 2px solid #143441;
     border-radius: 45px;
     letter-spacing: 1px;
     transition-duration: 200ms;
     padding: 0 20px;
 }
 .designbrief:hover {
-    background-color: #442256;
+    background-color: #143441;
     color: #fff;
-    border: 2px solid #442256;
+    border: 2px solid #143441;
 }
 .one {
 }
 .one:hover {
     background: #fff;
-    color: #442256;
+    color: #143441;
 }
 .one img {
     width: 100px;
@@ -167,7 +169,7 @@ header ul a:hover {
     animation-delay: 500ms;
 }
 .more {
-    color: #442256;
+    color: #143441;
     background-color: #ffffff;
     font-family: 'hindmedium';
     font-size: 12px;
@@ -216,7 +218,7 @@ header {
     margin: 0;
     padding: 50px 0 0 0;
     text-align: center;
-    color: #442256;
+    color: #143441;
     animation-duration: 500ms;
 }
 .section1 div {
