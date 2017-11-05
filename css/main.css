@@ -69,19 +69,19 @@ header ul a:hover {
     list-style: none;
     text-decoration: none;
     font-size: 16px;
-    background-color: #fff;
-    color: #143441;
+    background-color: #071b28;
+    color: #fff;
     font-family: 'hindsemibold';
-    border: 2px solid #071b28;
+    border: 2px solid #fff;
     border-radius: 45px;
     letter-spacing: 1px;
     transition-duration: 200ms;
     padding: 0 20px;
 }
 .designbrief:hover {
-    background-color: #071b28;
-    color: #fff;
-    border: 2px solid #071b28;
+    background-color: #fff;
+    color: #071b28;
+    border: 2px solid #fff;
 }
 .one {
 }
@@ -160,14 +160,6 @@ header ul a:hover {
     padding: 0;
     width: 1050px;
 }
-.hr {
-    border: 2px solid #9b1e5a;
-    width: 200px;
-    margin-bottom: 50px;
-    padding: 0;
-    animation-duration: 200ms;
-    animation-delay: 500ms;
-}
 .more {
     color: #143441;
     background-color: #ffffff;
@@ -178,7 +170,7 @@ header ul a:hover {
     border-radius: 60px;
     text-decoration: none;
     margin: 0;
-    transition-duration: 300ms;
+    transition-duration: 200ms;
     transition-timing-function: ease-out;
     animation-duration: 700ms;
     animation-delay: 600ms;
