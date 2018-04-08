@@ -1,60 +1,102 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Ithaca High School TSA</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/stylesheet.css">
-        <link rel="stylesheet" href="css/hover.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    	<script src="js/script.js"></script>
-        <script src="js/jquery-3.2.1.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script>new WOW().init();</script>
-    </head>
-    <body>
-        <div class="page-wrap">
-            <header>
-                <ul class="header">
-                    <a class="one"><img src="img/tsaemblem.svg" alt=""></a><a href="#home">
-                    <li class="okay">HOME</li></a><a href="officers.html" class="a">
-                    <li>OFFICERS</li></a><a href="courses.html" class="b">
-                    <li>ACTIVITIES</li></a><a href="activities.html" class="b">
-                    <li>COURSES</li></a>
-                </ul>
-            </header>
-            <a href="https://jyoon926.github.io/Webmaster-States-Design-Brief" class="designbrief"><li>Design Brief</li></a>
-            <div class="page-content">
-                <div class="wow fadeIn lander" id="top">
-                    <p class="wow ihs fadeInUp">Ithaca High School</p>
-                    <p class="wow tsa fadeInUp">TECHNOLOGY STUDENT ASSOCIATION</p>
-                    <a href="#more" class="wow more fadeInUp button">Learn More</a>
-                </div>
-                <div class="wow fadeIn cover3"></div>
-                <div class="wow fadeIn cover"></div>
-                <div class="wow fadeIn cover2"></div>
-                <section class="section-1">
-                    <h1 class="wow section1title fadeIn">About Us</h1>
-                    <div class="section1">
-                        <div class="wow fadeIn a">
-                            <img src="img/learners.svg" alt="">
-                            <h1>Ambitious Learners</h1>
-                            <h2>IHSTSA is a family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to accomplish great tasks.</h2>
-                        </div>
-                        <div class="wow fadeIn b">
-                            <img src="img/leaders.svg" alt="">
-                            <h1>Skilled Leaders</h1>
-                            <h2>IHSTSA members earn experience and competence in leadership to aid their road to success in the world of science, technology, art, and math.</h2>
-                        </div>
-                        <div class="wow fadeIn c">
-                            <img src="img/thinkers.svg" alt="">
-                            <h1>Exceptional Thinkers</h1>
-                            <h2>By completing diverse, challenging, and competitive events, the members of IHSTSA have become extraordinary scientists and engineers.</h2>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </body>
+<head>
+
+    <title>Ithaca High School TSA</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <script>
+  		$(document).ready(function(){
+  			$("a").on('click', function(event) {
+  				if (this.hash !== "") {
+  					event.preventDefault();
+  					var hash = this.hash;
+  					$('html, body').animate({
+  						scrollTop: $(hash).offset().top
+  					}, 800, function(){
+  						window.location.hash = hash;
+  					});
+  				}
+  			});
+  		});
+	  </script>
+
+</head>
+
+<body>
+
+  <!--<input type="checkbox" id="checkbox" class="checkbox" id="checkbox">
+  <label for="checkbox" class="header-button hvr-sweep-to-bottom-2"><i class="material-icons">&#xE5D2;</i></label>
+  <label for="checkbox" class="header-button2 hvr-sweep-to-bottom-1"><i class="material-icons">&#xE5CE;</i></label>
+	<ul class="header">
+		<a href="index.html">
+			<li><span class="underline--magical">Home</span></li>
+		</a>
+		<a href="products.html">
+			<li><span class="underline--magical">Officers</span></li>
+		</a>
+		<a href="artificialintelligence.html">
+			<li><span class="underline--magical">Activities</span></li>
+		</a>
+		<a href="whoweare.html">
+			<li><span class="underline--magical">Courses</span></li>
+		</a>
+  </ul>-->
+
+  <div class="lander">
+    <p class="logo">IHSTSA</p>
+    <a href="http://agapai.us/" target="_blank" class="designbrief">Design Brief</a>
+    <div class="lander-title">
+      <div class="bits">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+      <p>Learning to Lead in a Technical World.</p>
+    </div>
+    <div class="header">
+      <a href="index.html">
+  			<li><span class="">Home</span></li>
+  		</a>
+  		<a href="#">
+  			<li><span class="">Officers</span></li>
+  		</a>
+  		<a href="#">
+  			<li><span class="">Activities</span></li>
+  		</a>
+  		<a href="#">
+  			<li><span class="">Courses</span></li>
+  		</a>
+    </div>
+    <div class="block1"></div>
+    <img class="laptop" src="img/laptop.png" alt="">
+    <div class="bits2">
+      <div class="circle1"></div>
+      <div class="line1"></div>
+    </div>
+  </div>
+
+  <div class="section1">
+    <div class="block2"></div>
+    <div class="sectiontitle">
+      <p>ABOUT US</p>
+    </div>
+    <div class="sectiontext">
+      <p class="subtitle">Ambitious Learners</p>
+      <p class="paragraph">IHSTSA is a family of highly motivated students at Ithaca High School who ambitiously learn about STEM related topics to accomplish great tasks.</p>
+      <p class="subtitle">Skilled Leaders</p>
+      <p class="paragraph">IHSTSA members earn experience and competence in leadership to aid their road to success in the world of science, technology, art, and math.</p>
+      <p class="subtitle">Exceptional Thinkers</p>
+      <p class="paragraph">By completing diverse, challenging, and competitive events, the members of IHSTSA have become extraordinary scientists and engineers.</p>
+    </div>
+  </div>
+
+</body>
+
 </html>

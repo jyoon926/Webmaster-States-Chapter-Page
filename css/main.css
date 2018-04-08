@@ -1,7 +1,17 @@
+:root {
+  --primarycolor: #ff5735;
+  --secondarycolor: #1C124D;
+  --unitwidth: 100px;
+  --bold: 'hindbold';
+  --semibold: 'hindsemibold';
+  --medium: 'hindmedium';
+  --regular: 'hindbold';
+  --light:'hindlight' ;
+}
 html {
     margin: 0;
     padding: 0;
-    background: #07111e;
+    background: white;
     overflow-x: hidden;
 }
 body {
@@ -9,250 +19,224 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-.page-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
+.lander {
+  width: 75vw;
+  height: calc(100vh - var(--unitwidth));
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background: var(--primarycolor);
 }
-header {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: 50;
-    overflow-x: hidden;
-	background: #2e4b63;
-    width: 100vw;
-}
-header ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    justify-content: left;
-    align-items: center;
-    background-color: #2e4b63;
-    transition-duration: 200ms;
-    z-index: 50;
-}
-header ul a {
-    height: 80px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-    font-size: 16px;
-    transition-duration: 400ms;
-    color: #fff;
-    font-family: 'hindsemibold';
-    letter-spacing: 1px;
-    background: #2e4b63;
-    z-index: 50;
-}
-header ul a:hover {
-    background: #fff;
-    color: #2e4b63;
+.logo {
+  color: white;
+  position: absolute;
+  font-family: var(--bold);
+  font-size: 30px;
+  top: 40px;
+  left: 40px;
+  margin: 0;
+  padding: 0;
 }
 .designbrief {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    z-index: 100;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-    font-size: 16px;
-    background-color: #2e4b63;
-    color: #fff;
-    font-family: 'hindsemibold';
-    border: 2px solid #fff;
-    border-radius: 45px;
-    letter-spacing: 1px;
-    transition-duration: 200ms;
-    padding: 0 20px;
+  color: var(--secondarycolor);
+  position: absolute;
+  font-family: var(--light);
+  font-size: 18px;
+  top: 40px;
+  right: 40px;
+  margin: 0;
+  padding: 14px 20px;
+  border: 1px solid var(--secondarycolor);
+  text-decoration: none;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
 .designbrief:hover {
-    background-color: #fff;
-    color: #2e4b63;
-    border: 2px solid #fff;
+  background: var(--secondarycolor);
+  color: white;
 }
-.one {
+.lander-title {
+  margin-left: 200px;
 }
-.one:hover {
-    background: #2e4b63;
-    color: #fff;
+.lander-title p {
+  font-size: 50px;
+  color: var(--secondarycolor);
+  font-family: var(--bold);
+  width: 34vw;
+  line-height: 60px;
 }
-.one img {
-    width: 90px;
+.bits {
+  position: absolute;
 }
-.lander{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    overflow-x: hidden;
+.bits .line1 {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: white;
+  transform: rotate(-45deg);
+  margin-left: 100px;
+  margin-top: -40px;
 }
-.cover3 {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    background-image: url('../img/landerbgtop.svg');
-    z-index: -20;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
+.bits .line2 {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: white;
+  transform: rotate(45deg);
+  margin-left: -60px;
+  margin-top: 90px;
 }
-.cover {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    background-image: url('../img/landerbgmid.svg');
-    z-index: -30;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
+.bits .line3 {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: white;
+  transform: rotate(-45deg);
+  margin-left: 300px;
+  margin-top: 180px;
 }
-.cover2 {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    background-image: url('../img/landerbgbot.svg');
-    z-index: -50;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
+.bits .circle1 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 10px solid white;
+  margin-left: 32vw;
+  margin-top: -30px;
+  border-radius: 50%;
 }
-.ihs {
-    color: white;
-    font-family: 'hindmedium';
-    font-size: 24px;
-    margin: 0 0 50px 0;
-    padding: 0;
-    text-align: center;
-    animation-duration: 700ms;
-    animation-delay: 300ms;
+.bits .circle2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 10px solid white;
+  margin-left: 40px;
+  margin-top: 200px;
+  border-radius: 50%;
 }
-.tsa {
-    color: white;
-    font-family: 'hindbold';
-    font-size: 80px;
-    margin: 0 0 30px 0;
-    text-align: center;
-    animation-duration: 700ms;
-    animation-delay: 400ms;
-    padding: 0;
-    width: 1050px;
-	line-height: 90px;
+.header {
+  height: var(--unitwidth);
+  width: 58.334vw;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
 }
-.more {
-    color: #143441;
-    background-color: #ffffff;
-    font-family: 'hindmedium';
-    font-size: 12px;
-    padding: 15px 25px;
-    border: 2px solid white;
-    border-radius: 60px;
-    text-decoration: none;
-    margin: 0;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-    animation-duration: 700ms;
-    animation-delay: 600ms;
+.header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.5835vw;
+  height: 100%;
+  color: var(--secondarycolor);
+  font-family: var(--light);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  background: white;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
-.more:hover {
-    background: none;
-    color: white;
+.header a:hover {
+  background: var(--secondarycolor);
+  color: white;
 }
-.button {
-    font-size: 20px;
+.block1 {
+  height: var(--unitwidth);
+  width: 41.666vw;
+  background: var(--secondarycolor);
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
-.section-1 {
-    background: white;
-    width: 100vw;
+.laptop {
+  width: 400px;
+  transform: rotate(20deg);
+  position: absolute;
+  right: 25vw;
+  margin-right: -200px;
 }
-header {
-    top: 0;
-    position: fixed;
+.bits2 {
+  position: absolute;
+  right: 0;
+  top: 140px;
+}
+.bits2 .circle1 {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border: 10px solid var(--primarycolor);
+  right: 40px;
+  top: 0;
+  border-radius: 50%;
+}
+.bits2 .line1 {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: var(--primarycolor);
+  transform: rotate(-45deg);
+  right: 140px;
+  top: 40vh;
 }
 .section1 {
-    width: 100%;
-    padding: auto;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: white;
-}
-.section1title {
-    font-family: 'hindbold';
-    font-size: 60px;
-    letter-spacing: 0.5px;
-    padding: 20px 0 0 0;
-    background: white;
-    width: 100%;
-    margin: 0;
-    padding: 50px 0 0 0;
-    text-align: center;
-    color: #07111e;
-    animation-duration: 500ms;
-}
-.section1 div {
-    margin: 0;
-    padding: 0;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.section1 div img {
-    width: 150px;
-    padding-top: 50px;
-}
-.section1 div h1 {
-    font-family: 'hindmedium';
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    padding: 20px 0 0 0;
-    color: #0d2436;
-}
-.section1 div h2 {
-    font-family: 'hindlight';
-    font-size: 16px;
-    color: rgba(13,36,54,0.75);
-    letter-spacing: 0.5px;
-    text-align: center;
-    line-height: 24px;
-    width: 300px;
-    padding-bottom: 50px;
-}
-.section1 .a {
-    animation-delay: 0ms;
-}
-.section1 .b {
-    animation-delay: 100ms;
-}
-.section1 .c {
-    animation-delay: 200ms;
-}
-@media screen and (max-width: 1000px){
 
+}
+.block2 {
+  position: absolute;
+  height: var(--unitwidth);
+  width: var(--unitwidth);
+  background: var(--primarycolor);
+  right: 41.666vw;
+}
+.section1 {
+  display: flex;
+  flex-direction: row;
+    margin-top: var(--unitwidth);
+}
+.section1 .sectiontitle {
+  margin-top: var(--unitwidth);
+  width: 37.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .sectiontitle {
+  font-family: var(--light);
+  color: var(--secondarycolor);
+  font-size: 100px;
+  transform: rotate(90deg);
+  transform-origin: center center;
+  opacity: .3;
+}
+.section1 .sectiontext {
+  margin-top: var(--unitwidth);
+  right: 0;
+  width: 62.5vw;
+  background: var(--secondarycolor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--unitwidth) 0;
+}
+.section1 .sectiontext p {
+  color: white;
+  font-family: var(--light);
+  margin: 0 var(--unitwidth);
+}
+.section1 .sectiontext .subtitle {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.section1 .sectiontext .paragraph {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.section1 .sectiontext .paragraph:last-child {
+  margin-bottom: 0;
 }
