@@ -20,9 +20,6 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto Mono', monospace;
 }
-p, a, h1, h2 {
-    font-family: 'Roboto Mono', monospace;
-{
 .lander {
   width: 75vw;
   height: calc(100vh - var(--unitwidth));
