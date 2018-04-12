@@ -2,17 +2,17 @@
   --primarycolor: #ff5735;
   --secondarycolor: #1C124D;
   --unitwidth: 100px;
-  --bold: 'hindbold';
-  --semibold: 'hindsemibold';
-  --medium: 'hindmedium';
-  --regular: 'hindbold';
-  --light:'hindlight' ;
+  --bold: 700;
+  --medium: 500;
+  --regular: 400;
+  --light: 300;
 }
 html {
     margin: 0;
     padding: 0;
     background: white;
     overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace;
 }
 body {
     margin: 0;
@@ -32,7 +32,7 @@ body {
 .logo {
   color: white;
   position: absolute;
-  font-family: var(--bold);
+  font-weight: var(--bold);
   font-size: 30px;
   top: 40px;
   left: 40px;
@@ -42,7 +42,7 @@ body {
 .designbrief {
   color: var(--secondarycolor);
   position: absolute;
-  font-family: var(--light);
+  font-weight: var(--light);
   font-size: 18px;
   top: 40px;
   right: 40px;
@@ -63,7 +63,7 @@ body {
 .lander-title p {
   font-size: 50px;
   color: var(--secondarycolor);
-  font-family: var(--bold);
+  font-weight: var(--bold);
   width: 34vw;
   line-height: 60px;
 }
@@ -132,7 +132,7 @@ body {
   width: 14.5835vw;
   height: 100%;
   color: var(--secondarycolor);
-  font-family: var(--light);
+  font-weight: var(--light);
   font-size: 18px;
   text-align: center;
   text-decoration: none;
@@ -206,7 +206,7 @@ body {
   align-items: center;
 }
 .section1 .sectiontitle {
-  font-family: var(--light);
+  font-weight: var(--light);
   color: var(--secondarycolor);
   font-size: 100px;
   transform: rotate(90deg);
@@ -225,7 +225,7 @@ body {
 }
 .section1 .sectiontext p {
   color: white;
-  font-family: var(--light);
+  font-weight: var(--light);
   margin: 0 var(--unitwidth);
 }
 .section1 .sectiontext .subtitle {
