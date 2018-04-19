@@ -28,7 +28,13 @@ body {
   padding: 0;
   display: flex;
   align-items: center;
+}
+.bg {
   background: var(--primarycolor);
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  z-index: -2;
 }
 .logo {
   color: white;
@@ -62,59 +68,16 @@ body {
   margin-left: 200px;
 }
 .lander-title p {
-  font-size: 50px;
+  font-size: 70px;
   color: var(--secondarycolor);
   font-weight: var(--regular);
   width: 34vw;
-  line-height: 60px;
+  line-height: 100px;
 }
-.bits {
-  position: absolute;
-}
-.bits .line1 {
-  position: absolute;
-  width: 10px;
-  height: 40px;
-  background: white;
-  transform: rotate(-45deg);
-  margin-left: 100px;
-  margin-top: -40px;
-}
-.bits .line2 {
-  position: absolute;
-  width: 10px;
-  height: 40px;
-  background: white;
-  transform: rotate(45deg);
-  margin-left: -60px;
-  margin-top: 90px;
-}
-.bits .line3 {
-  position: absolute;
-  width: 10px;
-  height: 40px;
-  background: white;
-  transform: rotate(-45deg);
-  margin-left: 300px;
-  margin-top: 180px;
-}
-.bits .circle1 {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border: 10px solid white;
-  margin-left: 32vw;
-  margin-top: -30px;
-  border-radius: 50%;
-}
-.bits .circle2 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border: 10px solid white;
-  margin-left: 40px;
-  margin-top: 200px;
-  border-radius: 50%;
+.lander-title p span {
+  font-weight: var(--bold);
+  padding-bottom: -15px;
+  border-bottom: 6px solid var(--secondarycolor);
 }
 .header {
   height: var(--unitwidth);
@@ -191,7 +154,7 @@ body {
   position: absolute;
   height: var(--unitwidth);
   width: var(--unitwidth);
-  background: var(--primarycolor);
+  background: var(--secondarycolor);
   right: 41.666vw;
 }
 .section1 {
