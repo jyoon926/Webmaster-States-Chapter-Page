@@ -130,6 +130,7 @@
   background-image: url('../img/franchesca_chu.jpg');
   background-size: cover;
   background-position: center center;
+  background-size: 130%;
   padding: 0;
 }
 .section1 .a {
@@ -213,6 +214,7 @@
   background-image: url('../img/eli_zhang.jpg');
   background-size: cover;
   background-position: center center;
+  background-size: 130%;
   padding: 0;
 }
 .section2 .a {
@@ -270,6 +272,7 @@
   background: var(--secondarycolor);
   background-size: cover;
   background-position: center center;
+  background-size: 130%;
   padding: 0;
 }
 .img4 {
@@ -282,6 +285,7 @@
   background-image: url('../img/matthew_guo.jpg');
   background-size: cover;
   background-position: center center;
+  background-size: 130%;
   padding: 0;
 }
 .img5 {
@@ -294,6 +298,7 @@
   background: var(--secondarycolor);
   background-size: cover;
   background-position: center center;
+  background-size: 130%;
   padding: 0;
 }
 .img6 {
@@ -303,8 +308,9 @@
   justify-content: center;
   align-items: center;
   margin: 100px 0 0 -100px;
-  background: var(--secondarycolor);
+  background-image: url('../img/andrei_tumbar.jpg');
   background-size: cover;
   background-position: center center;
+  background-size: 130%;
   padding: 0;
 }
