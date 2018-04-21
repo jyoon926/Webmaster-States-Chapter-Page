@@ -1,0 +1,106 @@
+.lander {
+  width: 100vw;
+  height: calc(100vh - var(--unitwidth));
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background: var(--secondarycolor);
+}
+.background {
+  background-image: url('../img/earth.png');
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  background-size: 130%;
+}
+.logo {
+  color: white;
+  position: absolute;
+  font-weight: var(--bold);
+  font-size: 30px;
+  top: 40px;
+  left: 40px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.designbrief {
+  color: white;
+  position: absolute;
+  font-weight: var(--light);
+  font-size: 18px;
+  top: 40px;
+  right: 40px;
+  margin: 0;
+  padding: 14px 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+.designbrief:hover {
+  background: white;
+  color: var(--primarycolor);
+}
+.lander-title {
+  margin-left: 200px;
+  z-index: 1;
+}
+.lander-title p {
+  font-size: 60px;
+  color: white;
+  font-weight: var(--regular);
+  width: 50vw;
+  line-height: 90px;
+  margin: 0 0 40px 0;
+}
+.lander-title p span {
+  font-weight: var(--bold);
+  padding-bottom: -15px;
+  border-bottom: 6px solid white;
+}
+.bank {
+  position: absolute;
+  right: 5vw;
+  width: 30vw;
+}
+.header {
+  height: var(--unitwidth);
+  width: 100vw;
+  background: var(--primarycolor);
+  margin-top: -100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  box-shadow: 0 0 16px rgba(0,0,0,0);
+}
+.header div {
+  display: flex;
+  flex-direction: row;
+  width: 58.334vw;
+}
+.header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.5835vw;
+  height: 100%;
+  color: var(--secondarycolor);
+  font-weight: var(--light);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  background: white;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+.header a:hover {
+  background: var(--secondarycolor);
+  color: white;
+}

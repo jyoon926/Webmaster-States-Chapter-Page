@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Ithaca High School TSA</title>
+    <link rel="shortcut icon" href="img/logoicon.png"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/activities.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/stylesheet.css">-->
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700,900" rel="stylesheet">
+    <script>
+  		$(document).ready(function(){
+  			$("a").on('click', function(event) {
+  				if (this.hash !== "") {
+  					event.preventDefault();
+  					var hash = this.hash;
+  					$('html, body').animate({
+  						scrollTop: $(hash).offset().top
+  					}, 800, function(){
+  						window.location.hash = hash;
+  					});
+  				}
+  			});
+  		});
+	  </script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+  <div class="lander">
+  <a href="index.html" class="logo"><img src="img/tsalogo.svg" alt=""></a>
+    <a href="http://agapai.us/" target="_blank" class="designbrief">Design Brief</a>
+    <div class="lander-title">
+      <p>Activities/Fundraising</p>
+      <a href="#section1">Learn more</a>
+    </div>
+    <img class="bank" src="img/piggybankgradientmap.png" alt="">
+    <div class="header h">
+      <div>
+        <a href="index.html">
+    			<li><span class="">Home</span></li>
+    		</a>
+    		<a href="leadership.html">
+    			<li><span class="">Officers</span></li>
+    		</a>
+    		<a href="activities.html">
+    			<li><span class="">Activities</span></li>
+    		</a>
+    		<a href="courses.html">
+    			<li><span class="">Courses</span></li>
+    		</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="part1">
+      <p>This is the footer. There should be a sitemap.</p>
+    </div>
+      <div class="part2">
+        <p>There should be some contact information here.</p>
+      </div>
+  </footer>
+
+  <script src="js/jquery.easeScroll.js"></script>
+  <div id="overlay">
+      <p class="loadingText">IHSTSA</p>
+      <p class="loadingText1">Loading content...</p>
+      <div class="spinner"></div>
+  </div>
+  <script type="text/javascript">
+      var overlay = document.getElementById("overlay");
+      var body = document.getElementById("body");
+      window.addEventListener('load', function(){
+          overlay.style.top = '-100vh';
+          body.style.opacity = '1';
+      })
+  </script>
+	<script type="text/javascript">
+		$("html").easeScroll({
+		  frameRate: 60,
+		  animationTime: 1000,
+		  stepSize: 100,
+		  pulseAlgorithm: 1,
+		  pulseScale: 8,
+		  pulseNormalize: 1,
+		  accelerationDelta: 20,
+		  accelerationMax: 1,
+		  keyboardSupport: true,
+		  arrowScroll: 50,
+		  touchpadSupport: true
+		});
+	</script>
+
+</body>
+
+</html>
