@@ -137,6 +137,7 @@
   background-size: cover;
   background-position: center center;
   padding: 0;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
   z-index: 1;
 }
 .section1 .sectiontext {
@@ -209,6 +210,7 @@
   background-size: cover;
   background-position: center center;
   padding: 0;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
   z-index: 1;
 }
 .section2 .sectiontext {
@@ -275,6 +277,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/de.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .section3 .sectiontext {
   margin: 0 var(--unitwidth) 0 0;
@@ -348,6 +352,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/cim.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .section4 .sectiontext {
   margin: 0 0 0 var(--unitwidth);
@@ -401,6 +407,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/poe.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .eddimg {
   width: 600px;
@@ -414,6 +422,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/edd.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .cadimg {
   width: 600px;
@@ -427,6 +437,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/cad.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .archimg {
   width: 600px;
@@ -440,6 +452,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/arch.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .compsciimg {
   width: 600px;
@@ -453,6 +467,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/compsci.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .statsimg {
   width: 600px;
@@ -466,6 +482,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/stats.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .calcimg {
   width: 600px;
@@ -479,6 +497,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/calc.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .bioimg {
   width: 600px;
@@ -492,6 +512,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/bio.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .chemimg {
   width: 600px;
@@ -505,6 +527,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/chem.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .physimg {
   width: 600px;
@@ -518,6 +542,8 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/phys.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 .physcimg {
   width: 600px;
@@ -531,4 +557,6 @@
   padding: 0;
   z-index: 1;
   background-image: url('../img/physc.jpg');
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+  z-index: 1;
 }
