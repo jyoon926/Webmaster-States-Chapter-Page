@@ -103,3 +103,428 @@
   right: 0;
   bottom: 0;
 }
+.section1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 200px 0 0 0;
+  padding: 0 0 0 0;
+}
+.block2 {
+  background: var(--primarycolor);
+  width: 30vw;
+  margin: 0;
+  height: 600px;
+  right: 0;
+}
+.section1 .sectiontitle p{
+  margin: 0;
+  padding: 0 100px 0 0;
+}
+.section1 .img1 {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px -300px var(--unitwidth) 0;
+  background-image: url('../img/ddp.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+}
+.section1 .sectiontext {
+  margin: 0 var(--unitwidth) 0 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--unitwidth) 0 0 0;
+  width: 30vw;
+}
+.section1 .sectiontext .title {
+  color: var(--secondarycolor);
+  font-weight: var(--medium);
+  margin: 0 0 40px 0;
+  font-size: 28px;
+  line-height: 28px;
+}
+.section1 .sectiontext p {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 40px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.section1 .sectiontext a {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 0 var(--unitwidth);
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid var(--secondarycolor);
+  width: 100px;
+  transition-duration: 300ms;
+}
+.section1 .sectiontext a:hover {
+  background: var(--secondarycolor);
+  color: white;
+}
+.section2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+.block3 {
+  background: var(--primarycolor);
+  width: 30vw;
+  margin: 0;
+  height: 700px;
+  right: 0;
+}
+.section2 .sectiontitle p{
+  margin: 0;
+  padding: 0 100px 0 0;
+}
+.section2 .img1 {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -300px;
+  background-image: url('../img/cim.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+}
+.section2 .sectiontext {
+  margin: 0 0 0 var(--unitwidth);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--unitwidth) 0 0 0;
+  width: 30vw;
+}
+.section2 .sectiontext .title {
+  color: var(--secondarycolor);
+  font-weight: var(--medium);
+  margin: 0 0 40px 0;
+  font-size: 28px;
+  line-height: 28px;
+}
+.section2 .sectiontext p {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 40px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.section2 .sectiontext a {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 0 var(--unitwidth);
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid var(--secondarycolor);
+  width: 100px;
+  transition-duration: 300ms;
+}
+.section2 .sectiontext a:hover {
+  background: var(--secondarycolor);
+  color: white;
+}
+.section3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+.section3 .sectiontitle p{
+  margin: 0;
+  padding: 0 100px 0 0;
+}
+.section3 .img1 {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px -300px var(--unitwidth) 0;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/de.jpg');
+}
+.section3 .sectiontext {
+  margin: 0 var(--unitwidth) 0 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--unitwidth) 0 0 0;
+  width: 30vw;
+}
+.section3 .sectiontext .title {
+  color: var(--secondarycolor);
+  font-weight: var(--medium);
+  margin: 0 0 40px 0;
+  font-size: 28px;
+  line-height: 28px;
+}
+.section3 .sectiontext p {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 40px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.section3 .sectiontext a {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 0 var(--unitwidth);
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid var(--secondarycolor);
+  width: 100px;
+  transition-duration: 300ms;
+}
+.section3 .sectiontext a:hover {
+  background: var(--secondarycolor);
+  color: white;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 100px 0;
+  padding: 0 0 0 0;
+}
+.block3 {
+  background: var(--primarycolor);
+  width: 30vw;
+  margin: 0;
+  height: 700px;
+  right: 0;
+}
+.section4 .sectiontitle p{
+  margin: 0;
+  padding: 0 100px 0 0;
+}
+.section4 .img1 {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -300px;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/cim.jpg');
+}
+.section4 .sectiontext {
+  margin: 0 0 0 var(--unitwidth);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--unitwidth) 0 0 0;
+  width: 30vw;
+}
+.section4 .sectiontext .title {
+  color: var(--secondarycolor);
+  font-weight: var(--medium);
+  margin: 0 0 40px 0;
+  font-size: 28px;
+  line-height: 28px;
+}
+.section4 .sectiontext p {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 40px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.section4 .sectiontext a {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 0 var(--unitwidth);
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid var(--secondarycolor);
+  width: 100px;
+  transition-duration: 300ms;
+}
+.section4 .sectiontext a:hover {
+  background: var(--secondarycolor);
+  color: white;
+}
+.poeimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -300px;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/poe.jpg');
+}
+.eddimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px -300px var(--unitwidth) 0;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/edd.jpg');
+}
+.cadimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -300px;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/cad.jpg');
+}
+.archimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px -300px var(--unitwidth) 0;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/arch.jpg');
+}
+.compsciimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -300px;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/compsci.jpg');
+}
+.statsimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px -300px var(--unitwidth) 0;
+  background-size: cover;
+  background-position: bottom;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/stats.jpg');
+}
+.calcimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -300px;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/calc.jpeg');
+}
+.bioimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px -300px var(--unitwidth) 0;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/bio.jpg');
+}
+.chemimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -300px;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/chem.jpg');
+}
+.physimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px -300px var(--unitwidth) 0;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/phys.jpg');
+}
+.physcimg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -300px;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/physc.jpg');
+}
