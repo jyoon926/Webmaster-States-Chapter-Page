@@ -68,15 +68,21 @@
 }
 .header {
   height: var(--unitwidth);
-  width: 58.334vw;
-  background: white;
+  width: 100vw;
+  background: var(--secondarycolor);
+  margin-top: -100px;
   position: absolute;
   left: 0;
   bottom: 0;
   display: flex;
   flex-direction: row;
-  margin-top: -100px;
   z-index: 100;
+  box-shadow: 0 0 16px rgba(0,0,0,0);
+}
+.header div {
+  display: flex;
+  flex-direction: row;
+  width: 58.334vw;
 }
 .header a {
   display: flex;
@@ -479,7 +485,7 @@
   background-position: center center;
   padding: 0;
   z-index: 1;
-  background-image: url('../img/calc.jpeg');
+  background-image: url('../img/calc.jpg');
 }
 .bioimg {
   width: 600px;
