@@ -91,7 +91,7 @@
   width: 14.5835vw;
   height: 100%;
   color: var(--secondarycolor);
-  font-weight: var(--light);
+  font-weight: var(--regular);
   font-size: 18px;
   text-align: center;
   text-decoration: none;
@@ -101,6 +101,206 @@
   transition-timing-function: ease-in-out;
 }
 .header a:hover {
+  background: var(--secondarycolor);
+  color: white;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.block2 {
+  background: var(--primarycolor);
+  width: 30vw;
+  margin: 0;
+  height: 500px;
+  right: 0;
+}
+.section1 .sectiontitle p{
+  margin: 0;
+  padding: 0 100px 0 0;
+}
+.section1 .img1 {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px -300px var(--unitwidth) 0;
+  background-image: url('../img/coffee.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+}
+.section1 .sectiontext {
+  margin: 0 var(--unitwidth) 0 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--unitwidth) 0 0 0;
+  width: 40vw;
+}
+.section1 .sectiontext .title {
+  color: var(--secondarycolor);
+  font-weight: var(--medium);
+  margin: 0 0 40px 0;
+  font-size: 28px;
+  line-height: 28px;
+}
+.section1 .sectiontext p {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 40px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.section2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 200px 0 0 0;
+  padding: 0 0 0 0;
+}
+.block3 {
+  background: var(--primarycolor);
+  width: 30vw;
+  margin: 0;
+  height: 500px;
+  right: 0;
+}
+.section2 .sectiontitle p{
+  margin: 0;
+  padding: 0 100px 0 0;
+}
+.section2 .img1 {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -300px;
+  background-image: url('../img/Crowdfunding.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+}
+.section2 .sectiontext {
+  margin: 0 0 0 var(--unitwidth);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--unitwidth) 0 0 0;
+  width: 40vw;
+}
+.section2 .sectiontext .title {
+  color: var(--secondarycolor);
+  font-weight: var(--medium);
+  margin: 0 0 40px 0;
+  font-size: 28px;
+  line-height: 28px;
+}
+.section2 .sectiontext p {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 40px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.section2 .sectiontext a {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 0 var(--unitwidth);
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid var(--secondarycolor);
+  width: 100px;
+  transition-duration: 300ms;
+}
+.section2 .sectiontext a:hover {
+  background: var(--secondarycolor);
+  color: white;
+}
+.section4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 100px 0;
+  padding: 0 0 0 0;
+}
+.block3 {
+  background: var(--primarycolor);
+  width: 30vw;
+  margin: 0;
+  height: 500px;
+  right: 0;
+}
+.section4 .sectiontitle p{
+  margin: 0;
+  padding: 0 100px 0 0;
+}
+.section4 .img1 {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 var(--unitwidth) -200px;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/chocolate.jpg');
+}
+.section4 .sectiontext {
+  margin: 0 0 0 var(--unitwidth);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--unitwidth) 0 0 0;
+  width: 40vw;
+}
+.section4 .sectiontext .title {
+  color: var(--secondarycolor);
+  font-weight: var(--medium);
+  margin: 0 0 40px 0;
+  font-size: 28px;
+  line-height: 28px;
+}
+.section4 .sectiontext p {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 40px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.section4 .sectiontext a {
+  color: var(--secondarycolor);
+  font-weight: var(--regular);
+  margin: 0 0 0 var(--unitwidth);
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid var(--secondarycolor);
+  width: 100px;
+  transition-duration: 300ms;
+}
+.section4 .sectiontext a:hover {
   background: var(--secondarycolor);
   color: white;
 }
