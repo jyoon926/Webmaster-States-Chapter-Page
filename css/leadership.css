@@ -54,6 +54,7 @@
   font-weight: var(--regular);
   width: 50vw;
   line-height: 90px;
+  margin: 0 0 40px 0;
 }
 .lander-title p span {
   font-weight: var(--bold);
@@ -74,6 +75,8 @@
   bottom: 0;
   display: flex;
   flex-direction: row;
+  margin-top: -100px;
+  z-index: 100;
 }
 .header a {
   display: flex;
@@ -97,7 +100,9 @@
 }
 .block1 {
   height: var(--unitwidth);
-  width: 41.666vw;
+  width: 40.6vw;
+  margin-top: -100px;
+  z-index: 99;
   background: var(--secondarycolor);
   position: absolute;
   right: 0;

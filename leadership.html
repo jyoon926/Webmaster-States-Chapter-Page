@@ -25,6 +25,7 @@
   			});
   		});
 	  </script>
+    <script src="js/script.js"></script>
 
 </head>
 
@@ -35,9 +36,10 @@
     <a href="http://agapai.us/" target="_blank" class="designbrief">Design Brief</a>
     <div class="lander-title">
       <p>The IHSTSA Leadership Team</p>
+      <a href="#section1">Learn more</a>
     </div>
     <img class="chesspiece" src="img/king chess pice.png" alt="">
-    <div class="header">
+    <div class="header h">
       <a href="index.html">
   			<li><span class="">Home</span></li>
   		</a>
@@ -51,10 +53,10 @@
   			<li><span class="">Courses</span></li>
   		</a>
     </div>
-    <div class="block1"></div>
+    <div class="block1 h"></div>
   </div>
 
-  <div class="section1">
+  <div class="section1" id="section1">
     <div class="block2"></div>
     <div class="img1"></div>
     <div class="sectiontext">
@@ -111,6 +113,36 @@
         <p>There should be some contact information here.</p>
       </div>
   </footer>
+
+  <script src="js/jquery.easeScroll.js"></script>
+  <div id="overlay">
+      <p class="loadingText">IHSTSA</p>
+      <p class="loadingText1">Loading content...</p>
+      <div class="spinner"></div>
+  </div>
+  <script type="text/javascript">
+      var overlay = document.getElementById("overlay");
+      var body = document.getElementById("body");
+      window.addEventListener('load', function(){
+          overlay.style.top = '-100vh';
+          body.style.opacity = '1';
+      })
+  </script>
+	<script type="text/javascript">
+		$("html").easeScroll({
+		  frameRate: 60,
+		  animationTime: 1000,
+		  stepSize: 100,
+		  pulseAlgorithm: 1,
+		  pulseScale: 8,
+		  pulseNormalize: 1,
+		  accelerationDelta: 20,
+		  accelerationMax: 1,
+		  keyboardSupport: true,
+		  arrowScroll: 50,
+		  touchpadSupport: true
+		});
+	</script>
 
 </body>
 

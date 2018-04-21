@@ -25,6 +25,7 @@
   			});
   		});
 	  </script>
+    <script src="js/script.js"></script>
 
 </head>
 
@@ -35,9 +36,10 @@
     <a href="http://agapai.us/" target="_blank" class="designbrief">Design Brief</a>
     <div class="lander-title">
       <p>Courses at IHS</p>
+      <a href="#section1">Learn more</a>
     </div>
     <img class="cap" src="img/Square academic cap.png" alt="">
-    <div class="header">
+    <div class="header h">
       <a href="index.html">
   			<li><span class="">Home</span></li>
   		</a>
@@ -51,10 +53,10 @@
   			<li><span class="">Courses</span></li>
   		</a>
     </div>
-    <div class="block1"></div>
+    <div class="block1 h"></div>
   </div>
 
-  <div class="section1">
+  <div class="section1" id="section1">
     <div class="sectiontext">
       <p class="title">Design and Drawing for Production</p>
       <p class="paragraph">This course is an introductory course for students, which focuses on introducing the engineering design process: applying math, science, and engineering standards to identify, design, and analyze solutions to a variety of problems. By taking this course, students will be prepared to take more advanced engineering courses.</p>
@@ -73,7 +75,7 @@
   <div class="section3">
     <div class="sectiontext">
       <p class="title">Digital Electronics</p>
-      <p class="paragraph">This course studies the uses of applied digital logic. Students will study the application of electronic logic circuits and devices and apply Boolean logic to the solution of problems. Students will test and analyse simple and complex digital circuitry.</p>
+      <p class="paragraph">This course studies the uses of applied digital logic. Students will study the application of electronic logic circuits and devices and apply Boolean logic to the solution of problems. Students will test and analyze simple and complex digital circuitry.</p>
     </div>
     <div class="img1"></div>
     <div class="block2"></div>
@@ -137,7 +139,7 @@
   <div class="section3">
     <div class="sectiontext">
       <p class="title">AP Biology</p>
-      <p class="paragraph">An advanced course aimed at students who want to further their knowledge of biology past what is taught in the honors and regents level courses.</p>
+      <p class="paragraph">An advanced course aimed at students who want to further their knowledge of biology past what is taught in the honors and regents level courses. Students taking the course learn about the core scientific principles, theories, and processes governing living organisms, biological systems, and natural phenomena.</p>
     </div>
     <div class="bioimg"></div>
     <div class="block2"></div>
@@ -175,6 +177,36 @@
         <p>There should be some contact information here.</p>
       </div>
   </footer>
+
+  <script src="js/jquery.easeScroll.js"></script>
+  <div id="overlay">
+      <p class="loadingText">IHSTSA</p>
+      <p class="loadingText1">Loading content...</p>
+      <div class="spinner"></div>
+  </div>
+  <script type="text/javascript">
+      var overlay = document.getElementById("overlay");
+      var body = document.getElementById("body");
+      window.addEventListener('load', function(){
+          overlay.style.top = '-100vh';
+          body.style.opacity = '1';
+      })
+  </script>
+	<script type="text/javascript">
+		$("html").easeScroll({
+		  frameRate: 60,
+		  animationTime: 1000,
+		  stepSize: 100,
+		  pulseAlgorithm: 1,
+		  pulseScale: 8,
+		  pulseNormalize: 1,
+		  accelerationDelta: 20,
+		  accelerationMax: 1,
+		  keyboardSupport: true,
+		  arrowScroll: 50,
+		  touchpadSupport: true
+		});
+	</script>
 
 </body>
 
