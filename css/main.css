@@ -1,11 +1,15 @@
 :root {
-  --primarycolor: #f2b632;
-  --secondarycolor: #252839;
+  --primarycolor: #4717F6;
+  --secondarycolor: #0E0B16;
   --unitwidth: 100px;
   --bold: 700;
   --medium: 500;
   --regular: 400;
   --light: 300;
+}
+::selection {
+  color: white;
+  background: var(--primarycolor);
 }
 html {
     margin: 0;
