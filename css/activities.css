@@ -4,8 +4,12 @@
   max-height: 100vh;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: var(--secondarycolor);
 }
 .background {
@@ -37,8 +41,10 @@
   padding: 14px 20px;
   border: 1px solid white;
   text-decoration: none;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 .designbrief:hover {
   background: white;
@@ -75,20 +81,36 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   z-index: 100;
   box-shadow: 0 0 16px rgba(0,0,0,0);
 }
 .header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 58.334vw;
 }
 .header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 14.5835vw;
   height: 100%;
   color: var(--secondarycolor);
@@ -98,8 +120,10 @@
   text-decoration: none;
   list-style: none;
   background: white;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 .header a:hover {
   background: var(--primarycolor);
@@ -107,10 +131,19 @@
 }
 
 .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
@@ -128,9 +161,15 @@
 .section1 .img1 {
   width: 400px;
   height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 100px -300px var(--unitwidth) 0;
   background-image: url('../img/coffee.jpg');
   background-size: cover;
@@ -142,9 +181,16 @@
 .section1 .sectiontext {
   margin: 0 var(--unitwidth) 0 0;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: var(--unitwidth) 0 0 0;
   width: 40vw;
 }
@@ -163,10 +209,19 @@
   line-height: 24px;
 }
 .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 200px 0 0 0;
   padding: 0 0 0 0;
 }
@@ -184,9 +239,15 @@
 .section2 .img1 {
   width: 400px;
   height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 100px 0 var(--unitwidth) -300px;
   background-image: url('../img/crowdfunding.jpg');
   background-size: cover;
@@ -198,9 +259,16 @@
 .section2 .sectiontext {
   margin: 0 0 0 var(--unitwidth);
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: var(--unitwidth) 0 0 0;
   width: 40vw;
 }
@@ -229,17 +297,27 @@
   text-align: center;
   border: 1px solid var(--secondarycolor);
   width: 100px;
-  transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 .section2 .sectiontext a:hover {
   background: var(--secondarycolor);
   color: white;
 }
 .section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0 0 100px 0;
   padding: 0 0 0 0;
 }
@@ -257,9 +335,15 @@
 .section4 .img1 {
   width: 400px;
   height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 100px 0 var(--unitwidth) -200px;
   background-size: cover;
   background-position: center center;
@@ -272,9 +356,16 @@
 .section4 .sectiontext {
   margin: 0 0 0 var(--unitwidth);
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: var(--unitwidth) 0 0 0;
   width: 40vw;
 }
@@ -303,7 +394,8 @@
   text-align: center;
   border: 1px solid var(--secondarycolor);
   width: 100px;
-  transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 .section4 .sectiontext a:hover {
   background: var(--secondarycolor);

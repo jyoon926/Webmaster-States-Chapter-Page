@@ -7,6 +7,10 @@
   --regular: 400;
   --light: 300;
 }
+::-moz-selection {
+  color: white;
+  background: var(--primarycolor);
+}
 ::selection {
   color: white;
   background: var(--primarycolor);
@@ -43,7 +47,8 @@ body {
   text-decoration: none;
   padding: 15px 0 11px 0;
   border-bottom: 3px solid white;
-  transition-duration: 400ms;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
 }
 .lander-title a:hover {
   background: white;
@@ -52,25 +57,44 @@ body {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 footer .part1 {
   background: var(--secondarycolor);
   height: 300px;
   width: 62.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer .part1 p{
   color: white;
 }
 footer .part2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: var(--primarycolor);
   height: 200px;
   width: 37.5vw;
@@ -88,16 +112,28 @@ footer .part2 p{
 	height: 100vh;
 	width: 100vw;
   position: fixed;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
   left: 0;
   background: var(--primarycolor);
-  transition-duration: 1000ms;
-  transition-delay: 0;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .loadingText {
   color: var(--secondarycolor);
@@ -123,13 +159,26 @@ footer .part2 p{
 	border-radius: 100%;
 	margin: 0;
 	z-index: 998;
-	animation: spin 1s infinite linear;
+	-webkit-animation: spin 1s infinite linear;
+	        animation: spin 1s infinite linear;
+}
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
 }
 @keyframes spin {
 	from {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
 	}
 	to {
-		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
 	}
 }
