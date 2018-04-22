@@ -47,12 +47,13 @@
 .lander-title {
   margin-left: 200px;
   z-index: 1;
+  width: 40vw;
 }
 .lander-title p {
   font-size: 60px;
   color: white;
   font-weight: var(--regular);
-  width: 50vw;
+  width: 40vw;
   line-height: 90px;
   margin: 0 0 40px 0;
 }
@@ -101,7 +102,7 @@
   transition-timing-function: ease-in-out;
 }
 .header a:hover {
-  background: var(--secondarycolor);
+  background: var(--primarycolor);
   color: white;
 }
 

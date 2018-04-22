@@ -94,7 +94,7 @@
   transition-timing-function: ease-in-out;
 }
 .header a:hover {
-  background: var(--secondarycolor);
+  background: var(--primarycolor);
   color: white;
 }
 .block1 {
