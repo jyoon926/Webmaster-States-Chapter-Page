@@ -115,7 +115,7 @@ footer .part1 a {
   text-decoration: none;
   line-height: 30px;
   transition-duration: 300ms;
-  width: 70px;
+  width: 140px;
 }
 .arrow {
   position: absolute;
@@ -147,6 +147,9 @@ footer .thirdchild:hover ~ .arrow {
 }
 footer .fourthchild:hover ~ .arrow {
   margin-top: 95px;
+}
+footer .fifthchild:hover ~ .arrow {
+  margin-top: 125px;
 }
 footer .part1 p {
   margin-top: 50px;
