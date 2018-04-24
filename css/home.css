@@ -18,13 +18,12 @@
   width: inherit;
   background-size: 130%;
 }
-.designbrief {
+.designbriefhome {
   color: var(--secondarycolor);
-  position: absolute;
   font-weight: var(--light);
   font-size: 18px;
-  top: 40px;
-  right: 40px;
+  top: 24px;
+  right: 24px;
   margin: 0;
   padding: 14px 20px;
   border: 1px solid var(--secondarycolor);
@@ -33,10 +32,13 @@
           transition-duration: 200ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+  position: fixed !important;
+  z-index: 101;
 }
-.designbrief:hover {
+.designbriefhome:hover {
   background: var(--secondarycolor);
   color: white;
+  border: 1px solid var(--secondarycolor) !important;
 }
 .lander-title {
   margin-left: 200px;
