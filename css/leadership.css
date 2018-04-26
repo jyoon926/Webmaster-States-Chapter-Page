@@ -356,10 +356,9 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 100px 0 var(--unitwidth) -100px;
-  background: var(--secondarycolor);
+  background-image: url('../img/katrina_jander.jpg');
   background-size: cover;
   background-position: center center;
-  background-size: 130%;
   padding: 0;
   box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
   z-index: 1;
@@ -398,10 +397,9 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 100px 0 var(--unitwidth) -100px;
-  background: var(--secondarycolor);
+  background-image: url('../img/tilden_chao.jpg');
   background-size: cover;
   background-position: center center;
-  background-size: 130%;
   padding: 0;
   box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
   z-index: 1;
@@ -421,8 +419,9 @@
   margin: 100px 0 0 -100px;
   background-image: url('../img/andrei_tumbar.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
-  background-size: 130%;
+  transform: rotate(90deg);
   padding: 0;
   box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
   z-index: 1;

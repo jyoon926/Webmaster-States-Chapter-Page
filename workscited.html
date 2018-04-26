@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Ithaca High School TSA</title>
+    <link rel="shortcut icon" href="img/logoicon.png"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/workscited.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/stylesheet.css">-->
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700,900" rel="stylesheet">
+    <script>
+  		$(document).ready(function(){
+  			$("a").on('click', function(event) {
+  				if (this.hash !== "") {
+  					event.preventDefault();
+  					var hash = this.hash;
+  					$('html, body').animate({
+  						scrollTop: $(hash).offset().top
+  					}, 800, function(){
+  						window.location.hash = hash;
+  					});
+  				}
+  			});
+  		});
+	  </script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+  <div class="lander">
+  <a href="index.html" class="logo"><img src="img/tsalogo.svg" alt=""></a>
+    <a href="http://agapai.us/" target="_blank" class="designbrief">Design Brief</a>
+    <div class="lander-title">
+      <p>Works Cited</p>
+      <a href="#section1">Learn more</a>
+    </div>
+    <div class="header h">
+      <div>
+        <a href="index.html">
+    			<li><span class="">Home</span></li>
+    		</a>
+    		<a href="leadership.html">
+    			<li><span class="">Officers</span></li>
+    		</a>
+    		<a href="activities.html">
+    			<li><span class="">Activities</span></li>
+    		</a>
+    		<a href="courses.html">
+    			<li><span class="">Courses</span></li>
+    		</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section1">
+    <p class="subtitle">Resources</p>
+    <p class="paragraph">“Advantages and Disadvantages of Artificial Intelligence.” WiseStep, 26 Feb. 2018, content.wisestep.com/advantages-disadvantages-artificial-intelligence/.<br><br>“Artificial Intelligence.” Wikipedia, Wikimedia Foundation, 26 Apr. 2018, en.wikipedia.org/wiki/Artificial_intelligence.<br><br>“Benefits & Risks of Artificial Intelligence.” Future of Life Institute, futureoflife.org/background/benefits-risks-of-artificial-intelligence/.<br><br>Dietterich, Thomas G. “Benefits and Risks of Artificial Intelligence – Thomas G. Dietterich – Medium.” Medium, Medium, 23 Jan. 2015, medium.com/@tdietterich/benefits-and-risks-of-artificial-intelligence-460d288cccf3.<br><br>Eldridge, Douglas. “Why the Benefits of Artificial Intelligence Outweigh the Risks.” CMSWire.com, CMSWire.com, 22 Feb. 2017, www.cmswire.com/digital-experience/why-the-benefits-of-artificial-intelligence-outweigh-the-risks/.<br><br>Ford, Paul. “Are We Smart Enough to Control Artificial Intelligence?” MIT Technology Review, MIT Technology Review, 1 Feb. 2016, www.technologyreview.com/s/534871/our-fear-of-artificial-intelligence/.<br><br>Simonite, Tom. “Artificial Intelligence Seeks An Ethical Conscience.” Wired, Conde Nast, 2 Feb. 2018, www.wired.com/story/artificial-intelligence-seeks-an-ethical-conscience/.<br><br>“Business of Artificial Intelligence.” Harvard Business Review, 1 Feb. 2018, hbr.org/cover-story/2017/07/the-business-of-artificial-intelligence.</p>
+    <div class="subtitle2">Images</div>
+    <p class="paragraph">“Man Sitting with Laptop.” Raw Pixel, rawpixel.com.<br><br>McCullough, Daniel. “Architect Draws Blueprints with a Ruler on a Table.” Unsplash, unsplash.com.<br><br>Ovsyannykov, Igor. “Technology Chip.” Unsplash, unsplash.com.<br><br>SpaceX. “Rocket.” Unsplash, unsplash.com.</p>
+  </div>
+
+  <footer>
+    <div class="part1">
+      <a href="index.html" class="logofooter"><img src="img/tsalogo.svg" alt=""></a>
+      <h1>Cite Map</h1>
+      <ul>
+        <a class="firstchild" href="index.html">Home</a>
+        <a class="secondchild" href="leadership.html">Leadership</a>
+        <a class="thirdchild" href="activities.html">Activities</a>
+        <a class="fourthchild" href="courses.html">Courses</a>
+        <a class="fifthchild" href="workscited.html">Works Cited</a>
+        <div class="arrow"><i class="material-icons">&#xE5C8;</i></div>
+      </ul>
+      <h2>External Links</h2>
+      <ul>
+        <a class="firstchild" target="_blank" href="http://agapai.us/">AgapAI</a>
+        <div class="arrow"><i class="material-icons">&#xE5C8;</i></div>
+      </ul>
+      <!--p>Ithaca High School TSA<br><br>1401 N Cayuga St<br>Ithaca, NY 14850<br><br>Learning to lead in a technical world.</p-->
+    </div>
+    <div class="part2">
+      <h1>Contact Us<i class="material-icons">&#xE0BE;</i></h1>
+      <a href="mailto:ihstsa@gmail.com">ihstsa@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/jquery.easeScroll.js"></script>
+  <div id="overlay">
+      <p class="loadingText">IHSTSA</p>
+      <p class="loadingText1">Loading content...</p>
+      <div class="spinner"></div>
+  </div>
+  <script type="text/javascript">
+      var overlay = document.getElementById("overlay");
+      var body = document.getElementById("body");
+      window.addEventListener('load', function(){
+          overlay.style.top = '-100vh';
+          body.style.opacity = '1';
+      })
+  </script>
+	<script type="text/javascript">
+		$("html").easeScroll({
+		  frameRate: 60,
+		  animationTime: 1000,
+		  stepSize: 100,
+		  pulseAlgorithm: 1,
+		  pulseScale: 8,
+		  pulseNormalize: 1,
+		  accelerationDelta: 20,
+		  accelerationMax: 1,
+		  keyboardSupport: true,
+		  arrowScroll: 50,
+		  touchpadSupport: true
+		});
+	</script>
+
+</body>
+
+</html>
